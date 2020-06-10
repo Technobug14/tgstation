@@ -2,7 +2,6 @@
 
 /obj/item/gun/ballistic/fallout
 	name = "generic fallout gun"
-	desc = "complain when seeing this"
 	icon = 'fallout/icons/objects/guns/ballistics.dmi'
 	lefthand_file = 'fallout/icons/mob/inhands/weapons/guns_lefthand.dmi'
 	righthand_file = 'fallout/icons/mob/inhands/weapons/guns_righthand.dmi'
@@ -10,23 +9,24 @@
 //Fallout version for shotguns
 /obj/item/gun/ballistic/shotgun/fallout
 	name = "generic fallout gun"
-	desc = "complain when seeing this"
 	icon = 'fallout/icons/objects/guns/ballistics.dmi'
 	lefthand_file = 'fallout/icons/mob/inhands/weapons/guns_lefthand.dmi'
 	righthand_file = 'fallout/icons/mob/inhands/weapons/guns_righthand.dmi'
+	inhand_x_dimension = 32
+	inhand_y_dimension = 32
 	
 //Automatic shotguns
 /obj/item/gun/ballistic/shotgun/automatic/fallout
 	name = "generic fallout gun"
-	desc = "complain when seeing this"
 	icon = 'fallout/icons/objects/guns/ballistics.dmi'
 	lefthand_file = 'fallout/icons/mob/inhands/weapons/guns_lefthand.dmi'
 	righthand_file = 'fallout/icons/mob/inhands/weapons/guns_righthand.dmi'
+	inhand_x_dimension = 32
+	inhand_y_dimension = 32
 
 //Revolvers
 /obj/item/gun/ballistic/revolver/fallout
 	name = "generic fallout gun"
-	desc = "complain when seeing this"
 	icon = 'fallout/icons/objects/guns/ballistics.dmi'
 	lefthand_file = 'fallout/icons/mob/inhands/weapons/guns_lefthand.dmi'
 	righthand_file = 'fallout/icons/mob/inhands/weapons/guns_righthand.dmi'
@@ -34,7 +34,6 @@
 //Automatics
 /obj/item/gun/ballistic/automatic/fallout
 	name = "generic fallout gun"
-	desc = "complain when seeing this"
 	icon = 'fallout/icons/objects/guns/ballistics.dmi'
 	lefthand_file = 'fallout/icons/mob/inhands/weapons/guns_lefthand.dmi'
 	righthand_file = 'fallout/icons/mob/inhands/weapons/guns_righthand.dmi'
@@ -52,12 +51,23 @@
 //Bolt-actions
 /obj/item/gun/ballistic/rifle/fallout
 	name = "generic fallout gun"
-	desc = "complain when seeing this"
 	icon = 'fallout/icons/objects/guns/ballistics.dmi'
 	lefthand_file = 'fallout/icons/mob/inhands/weapons/guns_lefthand.dmi'
 	righthand_file = 'fallout/icons/mob/inhands/weapons/guns_righthand.dmi'
 	internal_magazine = FALSE
 	tac_reloads = TRUE
+
+//Loaders/Ammo boxes
+/obj/item/ammo_box/fallout
+	name = "generic fallout ammo box"
+	icon = 'fallout/icons/objects/ammo.dmi'
+	multiple_sprites = AMMO_BOX_PER_BULLET
+
+//Magazines
+/obj/item/ammo_box/magazine/fallout
+	name = "generic fallout magazine"
+	icon = 'fallout/icons/objects/ammo.dmi'
+	multiple_sprites = AMMO_BOX_PER_BULLET
 
 /*
 /obj/item/gun/ballistic/automatic/fallout/minigun

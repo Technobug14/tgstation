@@ -3,21 +3,25 @@
 	name = "lever action shotgun"
 	desc = "A trusty lever action shotgun with a tube supporting a maximum of five shells and a reinforced grip for bashing in heads."
 	icon_state = "levershot"
-	item_state = "trail"
+	item_state = "levershot"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/lever
+	fire_sound = 'fallout/sound/f13weapons/gunsounds/levershot/levershot2.ogg'
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	force = 25
+	fire_delay = 5
 
 /obj/item/gun/ballistic/shotgun/fallout/huntingshot
 	name = "hunting shotgun"
 	desc = "A pre-war pump action shotgun with an extended tube capable of holding eight shells and a bulky stock that excels in melee combat."
 	icon_state = "huntingshot"
-	item_state = "trail"
+	item_state = "huntingshot"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/huntingshot
+	fire_sound = 'fallout/sound/f13weapons/gunsounds/huntingshot/huntingshot2.ogg'
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	force = 30
+	fire_delay = 5
 
 /obj/item/gun/ballistic/shotgun/fallout/trail
 	name = "trail carbine"
@@ -27,6 +31,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube44
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
+	fire_sound = 'fallout/sound/f13weapons/trailfire.ogg'
 	fire_delay = 5
 	extra_damage = 40
 	extra_penetration = 10
@@ -39,6 +44,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube357
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
+	fire_sound = 'fallout/sound/f13weapons/gunsounds/repeater/repeater1.ogg'
 	fire_delay = 5
 	extra_damage = 35
 	extra_penetration = 10
@@ -51,6 +57,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube4570
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
+	fire_sound = 'fallout/sound/f13weapons/brushfire.ogg'
 	fire_delay = 5
 	extra_damage = 55
 	extra_penetration = 10
@@ -59,10 +66,11 @@
 	name = "battle rifle"
 	desc = "A very old but very reliable semi-automatic, clip fed rifle from long before the war. Chambered for .308."
 	icon_state = "battler"
-	item_state = "brush"
+	item_state = "battler"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/battler
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
+	fire_sound = 'fallout/sound/f13weapons/battlerifle.ogg'
 	fire_delay = 5
 	extra_damage = 40
 	extra_penetration = 15
@@ -71,8 +79,9 @@
 	name = "SKS"
 	desc = "An old European semi-automatic rifle chambered for 7.62 rounds and normally fed from 10 round stripper clips."
 	icon_state = "sks"
-	item_state = "brush"
+	item_state = "sks"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/sks
+	fire_sound = 'fallout/sound/f13weapons/gunsounds/sks/sks1.ogg'
 	extra_damage = 30
 	extra_penetration = 10
 
@@ -81,7 +90,7 @@
 	name = "Scoped SKS"
 	desc = "An SKS with a scope attached and some improved rifling for better penetration."
 	icon_state = "scoped_sks"
-	item_state = "brush"
+	item_state = "scoped_sks"
 	extra_penetration = 15
 	zoomable = TRUE
 	zoom_amt = 10
@@ -129,47 +138,42 @@
 	max_ammo = 8
 
 //Loaders
-/obj/item/ammo_box/tube4570
+/obj/item/ammo_box/fallout/tube4570
 	name = ".45-70 speed loader tube"
 	icon = 'fallout/icons/objects/ammo.dmi'
-	icon_state = "10mmadv"
+	icon_state = "4570tube"
 	ammo_type = /obj/item/ammo_casing/fallout/c4570
 	caliber = "4570"
 	max_ammo = 6
-	multiple_sprites = 2
 
-/obj/item/ammo_box/tube44
+/obj/item/ammo_box/fallout/tube44
 	name = ".44 speed loader tube"
 	icon = 'fallout/icons/objects/ammo.dmi'
-	icon_state = "10mmadv"
+	icon_state = "44tube"
 	ammo_type = /obj/item/ammo_casing/fallout/m44
 	caliber = "44"
 	max_ammo = 8
-	multiple_sprites = 2
 
-/obj/item/ammo_box/tube357
+/obj/item/ammo_box/fallout/tube357
 	name = ".357 speed loader tube"
 	icon = 'fallout/icons/objects/ammo.dmi'
-	icon_state = "10mmadv"
+	icon_state = "357tube"
 	ammo_type = /obj/item/ammo_casing/fallout/a357
 	caliber = "357"
 	max_ammo = 7
-	multiple_sprites = 2
 
-/obj/item/ammo_box/battler
+/obj/item/ammo_box/fallout/battler
 	name = "battle rifle stripper clip (.308)"
 	icon = 'fallout/icons/objects/ammo.dmi'
-	icon_state = "10mmadv"
+	icon_state = "battler"
 	ammo_type = /obj/item/ammo_casing/fallout/a308
 	caliber = "a308"
 	max_ammo = 8
-	multiple_sprites = 2
 
-/obj/item/ammo_box/sks
+/obj/item/ammo_box/fallout/sks
 	name = "SKS stripper clip (7.62)"
 	icon = 'fallout/icons/objects/ammo.dmi'
-	icon_state = "10mmadv"
+	icon_state = "sksclip"
 	ammo_type = /obj/item/ammo_casing/fallout/a762
 	caliber = "a762"
 	max_ammo = 10
-	multiple_sprites = 2
